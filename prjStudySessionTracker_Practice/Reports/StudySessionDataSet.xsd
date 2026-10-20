@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudySessionDataSet" targetNamespace="http://tempuri.org/StudySessionDataSet.xsd" xmlns:mstns="http://tempuri.org/StudySessionDataSet.xsd" xmlns="http://tempuri.org/StudySessionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudySessionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StudySessionDataSet" msprop:Generator_UserDSName="StudySessionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StudySessionDataTable" msprop:Generator_TableClassName="StudySessionDataTableDataTable" msprop:Generator_TableVarName="tableStudySessionDataTable" msprop:Generator_TablePropName="StudySessionDataTable" msprop:Generator_RowDeletingName="StudySessionDataTableRowDeleting" msprop:Generator_RowChangingName="StudySessionDataTableRowChanging" msprop:Generator_RowEvHandlerName="StudySessionDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="StudySessionDataTableRowDeleted" msprop:Generator_UserTableName="StudySessionDataTable" msprop:Generator_RowChangedName="StudySessionDataTableRowChanged" msprop:Generator_RowEvArgName="StudySessionDataTableRowChangeEvent" msprop:Generator_RowClassName="StudySessionDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subject_Name" msprop:Generator_ColumnVarNameInTable="columnSubject_Name" msprop:Generator_ColumnPropNameInRow="Subject_Name" msprop:Generator_ColumnPropNameInTable="Subject_NameColumn" msprop:Generator_UserColumnName="Subject_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Activity_Type" msprop:Generator_ColumnVarNameInTable="columnActivity_Type" msprop:Generator_ColumnPropNameInRow="Activity_Type" msprop:Generator_ColumnPropNameInTable="Activity_TypeColumn" msprop:Generator_UserColumnName="Activity_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Duration_Hours" msprop:Generator_ColumnVarNameInTable="columnDuration_Hours" msprop:Generator_ColumnPropNameInRow="Duration_Hours" msprop:Generator_ColumnPropNameInTable="Duration_HoursColumn" msprop:Generator_UserColumnName="Duration_Hours" type="xs:string" minOccurs="0" />
+              <xs:element name="Task_Completed" msprop:Generator_ColumnVarNameInTable="columnTask_Completed" msprop:Generator_ColumnPropNameInRow="Task_Completed" msprop:Generator_ColumnPropNameInTable="Task_CompletedColumn" msprop:Generator_UserColumnName="Task_Completed" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
