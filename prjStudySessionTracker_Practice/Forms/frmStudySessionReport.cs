@@ -31,9 +31,9 @@ namespace prjStudySessionTracker_Practice.Forms
                             s.id,
 	                        s.subject_name 'Subject_Name',
 	                        s.activity_type 'Activity_Type',
-	                        s.study_date 'Date',
+	                        DATE_FORMAT(s.study_date, '%b %d, %Y %l:%i%p') 'Date',
 	                        s.duration_hours 'Duration_Hours',
-                                s.task_completed 'Task_Completed',
+                            s.task_completed 'Task_Completed',
 	                        s.notes 'Notes'
 
                         FROM tblStudySessions s

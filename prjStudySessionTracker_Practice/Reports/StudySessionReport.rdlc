@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.82191cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.82191cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.82191cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.50441cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.82191cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.40399cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -37,9 +37,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Subject Name</Value>
+                              <Value>Subject </Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -94,6 +95,7 @@
                               <Value>Activity Type</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -148,6 +150,7 @@
                               <Value>Date</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -202,6 +205,7 @@
                               <Value>Duration Hours</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -256,6 +260,7 @@
                               <Value>Task Completed</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -310,6 +315,7 @@
                               <Value>Notes</Value>
                               <Style>
                                 <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -693,9 +699,9 @@
         </TablixRowHierarchy>
         <DataSetName>StudySessionDataSet</DataSetName>
         <Top>1.84891cm</Top>
-        <Left>1.95474cm</Left>
+        <Left>1.29328cm</Left>
         <Height>1.2cm</Height>
-        <Width>15cm</Width>
+        <Width>17.19604cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -724,9 +730,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>0.18625in</Top>
-        <Left>0.76958in</Left>
+        <Left>0.50917in</Left>
         <Height>0.48611in</Height>
-        <Width>5.90551in</Width>
+        <Width>6.7701in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -742,7 +748,7 @@
     <Height>1.20036in</Height>
     <Style />
   </Body>
-  <Width>6.6751in</Width>
+  <Width>7.27926in</Width>
   <Page>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>

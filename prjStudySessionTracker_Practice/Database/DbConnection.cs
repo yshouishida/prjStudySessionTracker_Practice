@@ -24,13 +24,16 @@ namespace prjStudySessionTracker_Practice.Database
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return false;
+                return false;   
             }
         }
 
         public static void ConnClose()
         {
-            Connection?.Close();
+            if (Connection == null && Connection.State == System.Data.ConnectionState.Closed)
+            {
+                Connection.Close();
+            }
         }
 
     }

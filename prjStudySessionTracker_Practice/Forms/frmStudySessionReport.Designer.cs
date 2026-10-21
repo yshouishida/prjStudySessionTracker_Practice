@@ -48,7 +48,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.rvStudySessions);
             this.Name = "frmStudySessionReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Study Session Report";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmStudySessionReport_Load);
             this.ResumeLayout(false);
 
