@@ -198,5 +198,10 @@ namespace prjStudySessionTracker_Practice
                 btnSerach.PerformClick();
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

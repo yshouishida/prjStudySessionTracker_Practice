@@ -37,7 +37,10 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.dgvStudySessions = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlToolbar = new System.Windows.Forms.Panel();
+            this.btnSerach = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnNew = new System.Windows.Forms.ToolStripButton();
             this.btnEdit = new System.Windows.Forms.ToolStripButton();
@@ -45,9 +48,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReport = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSerach = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.pnlBody.SuspendLayout();
@@ -145,8 +146,16 @@
             this.dgvStudySessions.Size = new System.Drawing.Size(1084, 486);
             this.dgvStudySessions.TabIndex = 3;
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
             // pnlToolbar
             // 
+            this.pnlToolbar.Controls.Add(this.label1);
             this.pnlToolbar.Controls.Add(this.btnSerach);
             this.pnlToolbar.Controls.Add(this.txtSearch);
             this.pnlToolbar.Controls.Add(this.toolStrip2);
@@ -155,6 +164,27 @@
             this.pnlToolbar.Name = "pnlToolbar";
             this.pnlToolbar.Size = new System.Drawing.Size(1084, 60);
             this.pnlToolbar.TabIndex = 2;
+            // 
+            // btnSerach
+            // 
+            this.btnSerach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSerach.Location = new System.Drawing.Point(877, 19);
+            this.btnSerach.Name = "btnSerach";
+            this.btnSerach.Size = new System.Drawing.Size(75, 29);
+            this.btnSerach.TabIndex = 3;
+            this.btnSerach.Text = "Search";
+            this.btnSerach.UseVisualStyleBackColor = true;
+            this.btnSerach.Click += new System.EventHandler(this.btnSerach_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(621, 19);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(250, 29);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // toolStrip2
             // 
@@ -243,32 +273,16 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // id
+            // label1
             // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(514, 15);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(250, 29);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
-            // 
-            // btnSerach
-            // 
-            this.btnSerach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSerach.Location = new System.Drawing.Point(770, 15);
-            this.btnSerach.Name = "btnSerach";
-            this.btnSerach.Size = new System.Drawing.Size(75, 29);
-            this.btnSerach.TabIndex = 3;
-            this.btnSerach.Text = "Search";
-            this.btnSerach.UseVisualStyleBackColor = true;
-            this.btnSerach.Click += new System.EventHandler(this.btnSerach_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(424, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Search by Subject Name:";
             // 
             // frmMain
             // 
@@ -318,6 +332,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.Button btnSerach;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label label1;
     }
 }
 
