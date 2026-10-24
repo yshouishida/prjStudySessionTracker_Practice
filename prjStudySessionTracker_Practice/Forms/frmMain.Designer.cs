@@ -39,6 +39,7 @@
             this.dgvStudySessions = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlToolbar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSerach = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
@@ -48,7 +49,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReport = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.pnlBody.SuspendLayout();
@@ -107,6 +107,7 @@
             this.canToolStripMenuItem.Name = "canToolStripMenuItem";
             this.canToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.canToolStripMenuItem.Text = "Change Password";
+            this.canToolStripMenuItem.Click += new System.EventHandler(this.canToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
@@ -164,6 +165,17 @@
             this.pnlToolbar.Name = "pnlToolbar";
             this.pnlToolbar.Size = new System.Drawing.Size(1084, 60);
             this.pnlToolbar.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(424, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Search by Subject Name:";
             // 
             // btnSerach
             // 
@@ -272,17 +284,6 @@
             this.btnRefresh.Size = new System.Drawing.Size(112, 57);
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(424, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Search by Subject Name:";
             // 
             // frmMain
             // 

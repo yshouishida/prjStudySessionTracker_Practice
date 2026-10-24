@@ -203,5 +203,10 @@ namespace prjStudySessionTracker_Practice
         {
 
         }
+
+        private void canToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmChangePwd(UserId).ShowDialog();
+        }
     }
 }
